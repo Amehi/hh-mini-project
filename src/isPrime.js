@@ -6,7 +6,7 @@ function displayPrime(){
     for(let i=1; i<=100; i++){
         arr.push(i);
     }
-    console.log(arr)
+    //console.log(arr)
     var num = 0;
     var res = arr.filter(function(el){
         var count = 0;
@@ -17,9 +17,13 @@ function displayPrime(){
         return count === 2;
     });
     //console.log(num);
-    console.log(res);
+    //console.log(res);
     return res;
     
 }
+
+module.exports = {
+    displayPrime(){return displayPrime()}
+}
 //console.log("hellow!")
-displayPrime()
+//displayPrime()
